@@ -3,14 +3,14 @@ const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected} `);
   } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !==${expected} `);
+    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected} `);
   }
 
 };
-
 // TEST CODE
 //assertEqual("Lighthouse Labs", "Bootcamp");
 //assertEqual(1, 1);
+/////////////////////////////////////////////////////////////////////
 
 //take a sentence(as string) and return a count of the letters in that sentences
 //ex countLetters("LHL") should return L apears twice and H once
@@ -36,6 +36,7 @@ const countLetters = function(str){
   return result;
 };
 countLetters("lighthouse in the house")
+assertEqual(countLetters("LHL"), "LHL")
 /*{
   l: 1,
   i: 2,

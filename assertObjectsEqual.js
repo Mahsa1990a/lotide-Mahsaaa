@@ -7,13 +7,11 @@ const assertEqual = function(actual, expected) {
   }
 
 };
-
 // TEST CODE
 //assertEqual("Lighthouse Labs", "Bootcamp");
 //assertEqual(1, 1);
-
 //assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), true); // => should PASS
-
+/////////////////////////////////////////////////////////////////////////////////////
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 
@@ -35,7 +33,6 @@ const eqObjects = function(object1, object2) {
   } 
   return false;
 };
-
 
 const eqArrays = function(array1, array2){
   
@@ -60,8 +57,6 @@ const assertObjectsEqual = function(object1, object2) {
     console.log(`🛑🛑🛑Assertion Failed: ${inspect(object1)} !==${inspect(object2)} `);
   }
 };
-
-
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };

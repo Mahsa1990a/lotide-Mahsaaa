@@ -3,16 +3,15 @@ const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected} `);
   } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !==${expected} `);
+    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected} `);
   }
 
 };
-
 // TEST CODE
 //assertEqual("Lighthouse Labs", "Bootcamp");
 //assertEqual(1, 1);
-
 //assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), true); // => should PASS
+//////////////////////////////////////////////////////////////////////////////////
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
@@ -38,7 +37,6 @@ const eqObjects = function(object1, object2) {
   } 
   return false;
 };
-
 
 const eqArrays = function(array1, array2){
   

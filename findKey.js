@@ -7,15 +7,15 @@ const assertEqual = function(actual, expected) {
   }
 
 };
-
 // TEST CODE
 //assertEqual("Lighthouse Labs", "Bootcamp");
 //assertEqual(1, 1);
 
-
 const findKey = function(object1, value1){
   
   for(let key in object1){
+    //we are calline the key of obj but looking for value of it
+    //and through value want to find key
       if(value1(object1[key])){
         return key;
     }
